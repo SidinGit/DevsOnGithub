@@ -7,11 +7,13 @@ import SignUpPage from './pages/SignUpPage'
 import ExplorePage from './pages/ExplorePage'
 import LikesPage from './pages/LikesPage'
 import Sidebar from './components/Sidebar'
+import { useAuthContext } from './context/AuthContext'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-  const authUser = true
+  const {authUser, loading} = useAuthContext() //^ context is called
+  console.log("Authenticated User: ", authUser)
+  if(loading) return null
   return (
     <div className='flex text-white'>
 			<Sidebar />
