@@ -22,7 +22,7 @@ passport.use(
     new GitHubStrategy({
         clientID: process.env.GITHUB_CLIENT_ID,
         clientSecret: process.env.GITHUB_CLIENT_SECRET,
-        callbackURL: "/api/auth/github/callback"
+        callbackURL: "https://devs-on-github.onrender.com/api/auth/github/callback"
     },
     async function(accessToken, refreshToken, profile, done) {
     // asynchronous verification, for effect...
