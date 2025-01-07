@@ -27,11 +27,11 @@ app.get("*", (req, res) => {
     "start": "node backend/server.js" // start
   }
   ```
-### 3. Deploy on render.com with env variables
+### 3. Deploy with env variables
 
 ### 4. Update Github OAuth App (homepage url and callback url)
 
-### 5. Add CLIENT_BASE_URL as env variable on render
+### 5. Add CLIENT_BASE_URL as env variable on render(or a deployment service of your choice)
 
 ### 6. Update the callback url on github.auth.js to full url (deployed url)
 ```js
